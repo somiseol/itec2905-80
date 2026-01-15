@@ -21,4 +21,7 @@ while i < len(phrase):
         new_phrase += phrase[i]
         i += 1
 
+# use .capitalize() next time
+# error if trailing white space
+
 print(new_phrase)
