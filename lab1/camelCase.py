@@ -1,4 +1,11 @@
+import re
+
 phrase = input("phrase: ")
+
+# check if str is valid
+if not re.fullmatch("^[a-zA-Z ]+$", phrase):
+    print("invalid")
+    quit()
 
 phrase = phrase.lower()
 new_phrase = ""
