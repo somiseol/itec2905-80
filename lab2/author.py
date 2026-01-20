@@ -10,12 +10,14 @@ class Author:
         return f"{self.name} {self.books}"
 
 def main():
+    # test case w books
     chambers = Author("Robert W Chambers")
     chambers.publish("The King in Yellow")
     chambers.publish("The Maker of Moons")
     chambers.publish("The Prophets' Paradise")
     print(chambers)
 
+    # test case w/o books
     bierce = Author("Ambrose Bierce")
     print(bierce)
 
