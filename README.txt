@@ -1,12 +1,12 @@
-# Spring 2026 ITEC2905-80 Software Development Capstone
+----- About -----
 
-## About
+Spring 2026 ITEC2905-80 Software Development Capstone
 
 Required course for Software Development AAS from Minneapolis Community and Technical College, taken Spring semester 2026 (20260112-20260518)
 
 Taught by Prof. Clara James
 
-## Grades
+----- Grades -----
 
 ASSIGNMENT   DUE DATE       SCORE
 ---------------------------------
