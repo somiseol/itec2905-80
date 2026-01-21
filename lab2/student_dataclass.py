@@ -3,7 +3,8 @@ from dataclasses import dataclass
 @dataclass # DIFF decorators (wrapper/interface?)
 class Student:
     # DIFF __init__ method is optional
-    name: str
+    # DIFF  no self
+    name: str # DIFF only need var type
     school_id: str
     gpa: float
 
