@@ -1,5 +1,13 @@
 import re
 
+def banner():
+    """ display program name """
+    message = "Somi's Awesome camelCase program"
+    stars = "*" * len(message)
+
+    print(f"\n{stars}\n{message}\n{stars}\n")
+
+banner()
 phrase = input("phrase: ")
 
 # check if str is valid
@@ -23,5 +31,6 @@ while i < len(phrase):
 
 # use .capitalize() next time
 # error if trailing white space
+
 
 print(new_phrase)
