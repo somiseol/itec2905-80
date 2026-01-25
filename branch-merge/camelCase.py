@@ -7,7 +7,12 @@ def banner():
 
     print(f"\n{stars}\n{message}\n{stars}\n")
 
+def instructions():
+    """ display instructions """
+    print("Enter a sentence and this program will convert it ot camelcase")
+
 banner()
+instructions()
 phrase = input("phrase: ")
 
 # check if str is valid
