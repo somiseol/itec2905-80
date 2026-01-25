@@ -8,7 +8,7 @@ def banner():
     print(f"\n{stars}\n{message}\n{stars}\n")
 
 def instructions():
-    """ display instructions """
+    """ display instructions on how to use the program """
     print("Enter a sentence and this program will convert it ot camelcase")
 
 banner()
