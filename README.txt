@@ -11,7 +11,7 @@ Taught by Prof. Clara James
 ASSIGNMENT   DUE DATE       SCORE
 ---------------------------------
 Lab 1        2026 01 14     20/20
-Lab 2        2026 01 21       /20
+Lab 2        2026 01 21     20/20
 Lab 3        2026 01 28       /20
 Lab 4        2026 02 11       /20
 Lab 5        2026 02 18       /20
