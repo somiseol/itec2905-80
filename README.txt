@@ -24,7 +24,7 @@ Lab 11       2026 04 29       /20
 Lab 12       2026 04 22       /20     
 Lab 13       2026 04 29       /20     
 
-Project 1                     /70
+Project 1                   98/100 
 Project 2                     /50
 Project 3                     /100
 Project 4                     /100
