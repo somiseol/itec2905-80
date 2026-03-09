@@ -1,3 +1,5 @@
+# main file for routing rquests for the whole site
+
 """
 URL configuration for wishlist project.
 
@@ -15,8 +17,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include  # delegate all req other than to admin to travel_wishlist with 'include'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('travel_wishlist.urls'))
 ]
