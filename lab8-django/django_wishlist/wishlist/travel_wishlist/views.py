@@ -3,7 +3,7 @@ controllers are called views in django
 '''
 
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Place
 from .forms import NewPlaceForm
 
@@ -30,3 +30,14 @@ def about(request):
 def places_visited(request):
     visited_places = Place.objects.filter(visited=True).order_by('name')
     return render(request, 'travel_wishlist/visited.html', {'visited_places': visited_places})
+
+
+def place_was_visited(request, place_pk):  # place_pk is from url path (needs to match)
+    if request.method == "POST":
+        #place = Place.objects.get(pk=place_pk)  # 'pk' is db column, 'place_pk' is from argument
+        place = get_object_or_404(Place, pk=place_pk)  # will return 404 if object not found
+        place.visited = True  # directly manage field in model object
+        place.save()  # save to db
+
+    # return redirect('places_visited)
+    return redirect('place_list')  # 'place_list' is path from urls.py

@@ -11,6 +11,12 @@
 
 <div>
     {{ place.name }}
+
+    <form method="POST" action="{% url 'place_was_visited' place.pk %}">  <!--- url reversing; will fill in placeholder in the path in urls.py (place/<int:place_pk>/was_visited) --->
+        {% csrf_token %}
+        <button>visited</button>
+    </form>
+
 </div>
 
 {% empty %} <!--- if list is empty --->
