@@ -1,1 +1,13 @@
-todo -show list of places
+<h2>travel wishlist</h2>
+
+{% for place in places %}
+
+<div>
+    {{ place.name }}
+</div>
+
+{% empty %}
+
+<p>you have no places in your wishlist</p>
+
+{% endfor %}
