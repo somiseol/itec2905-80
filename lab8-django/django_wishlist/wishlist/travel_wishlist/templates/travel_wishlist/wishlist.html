@@ -1,4 +1,4 @@
-<h2>travel wishlist</h2>
+<h2>TRAVEL WISHLIST</h2>
 
 <form method="POST" action="{% url 'place_list' %}">
     {% csrf_token %}
@@ -18,3 +18,5 @@
 <p>you have no places in your wishlist</p>
 
 {% endfor %}
+
+<a href="{% url 'places_visited' %}">places visited</a>  <!--- link to url that's referencing 'name' in urls.py --->
