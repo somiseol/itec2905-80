@@ -1,3 +1,8 @@
+'''
+controllers are called views in django
+'''
+
+
 from django.shortcuts import render, redirect
 from .models import Place
 from .forms import NewPlaceForm
@@ -20,3 +25,8 @@ def place_list(request):
 def about(request):
     about = 'a website to create a wishlist of places'
     return render(request, 'travel_wishlist/about.html', {'author': 'Somi', 'about': about})
+
+
+def places_visited(request):
+    visited_places = Place.objects.filter(visited=True).order_by('name')
+    return render(request, 'travel_wishlist/visited.html', {'visited_places': visited_places})

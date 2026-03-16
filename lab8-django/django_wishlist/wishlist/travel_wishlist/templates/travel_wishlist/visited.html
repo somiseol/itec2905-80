@@ -1,0 +1,14 @@
+<h2>PLACES VISITED</h2>
+
+{% if visited_places %}
+
+    <ul>
+        {% for place in visited_places %}
+            <li>{{ place.name }}</li>
+        {% endfor %}
+    </ul>
+
+{% else %}
+    <p>no places visited yet</p>
+
+{% endif %}
